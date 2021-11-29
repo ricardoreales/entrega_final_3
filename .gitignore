@@ -1,4 +1,4 @@
 /scss
 /maqueta
-/node_module
-package.json
+/node_modules
+*.txt
