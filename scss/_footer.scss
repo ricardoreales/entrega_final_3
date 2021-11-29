@@ -1,0 +1,55 @@
+footer {
+  font-size: 14px;
+  display: flex;
+  background-color: $color-red;
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    .footer__container__redes {
+      background: $color-black;
+      padding: 20px;
+     
+
+      h1 {
+        font-size: 18px;
+        color: $color-red;
+        margin: 5px;
+      }
+      h2 {
+        font-size: 14px;
+        margin: 5px;
+      }
+      a {
+        font-size: 30px;
+        margin-right: 10px;
+       
+      }
+    }
+  }
+
+  .footer__autor {
+    .pen{
+      font-size: 30px;
+      color: $color-white;
+      
+    }
+   
+    h1 {
+      font-size: 14px;
+    }
+  }
+
+  .footer__logo {
+    .logo2 {
+      // display: none;
+      width: 50px;
+      margin: 10px;
+      
+      
+     
+    }
+  }
+}

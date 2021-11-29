@@ -1,0 +1,101 @@
+.background__imagen__home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-size: cover;
+    background-image: url("../imagenes/home.webp");
+    background-position: top center;
+    opacity: 0.8;
+    z-index: -1;
+  }
+}
+
+.background__imagen__actividades {
+  position: relative;
+ height: auto;
+  width: 100%;
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-size: cover;
+    background-image: url("../imagenes/actividades.webp");
+    background-position: 10% 100%;
+    opacity: 0.8;
+    z-index: -1;
+  }
+}
+
+.background__imagen__precios {
+  position: relative;
+ height: auto;
+  width: 100%;
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-size: cover;
+    background-image: url("../imagenes/precios.webp");
+    background-position: -220px 0px;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    z-index: -1;
+  }
+}
+
+
+
+.background__imagen__contactos {
+  position: relative;
+ height: auto;
+  width: 100%;
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-size: cover;
+    background-image: url("../imagenes/contactanos.webp");
+    background-position: -220px 0px;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    z-index: -1;
+  }
+}
+
+
+.background__items {
+  border-radius: 20px;
+  background: $color-black;
+  border: 2px solid $color-white;
+}
+
+.background__precios {
+  border-radius: 20px;
+  background: $color-white;
+  border: 2px solid $color-black;
+}
+
+
+.background__galeria {
+ 
+  // background: $color-black;
+  border: 2px solid $color-black;
+  width: 100%;
+
+}

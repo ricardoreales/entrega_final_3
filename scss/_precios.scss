@@ -1,0 +1,72 @@
+.main__precios__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  h1 {
+    font-size: 18px;
+    color: $color-white;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid $color-white;
+    background: $color-red;
+    padding: 10px 40px;
+    border-radius: 20px;
+    width: 200px;
+    height: auto;
+  }
+
+  .items__precios__container {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+
+    .items__precios {
+      display: flex;
+
+      width: 260px;
+      height: 312px;
+      flex-direction: column;
+      align-items: center;
+      margin: 80px;
+
+      .h1__precios {
+        margin-top: 20px;
+        font-size: 18px;
+        background: rgb(0, 0, 0);
+        background: $color-red;
+      }
+      .h1__precios__gold {
+        margin-top: 20px;
+        font-size: 18px;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(
+          7deg,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(183, 160, 39, 1) 50%,
+          rgba(255, 255, 255, 1) 100%
+        );
+      }
+      p {
+        text-align: center;
+        margin-top: 5px;
+        padding: 10px 40px;
+        text-transform: lowercase;
+        text-align: center;
+        color: $color-black;
+      }
+
+      .estrellas {
+        color:$color-black;
+        margin: 10px;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}

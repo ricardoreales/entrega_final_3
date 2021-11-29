@@ -1,0 +1,89 @@
+.main__contactos__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  h1 {
+    font-size: 18px;
+    color: $color-white;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid $color-white;
+    background: $color-red;
+    padding: 10px 40px;
+    border-radius: 20px;
+    width: 200px;
+    height: auto;
+  }
+
+  .input__container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-items: center;
+    label {
+      display: none;
+    }
+    .input__contacto {
+      margin: 5px;
+      padding: 10px 40px 10px 40px;
+      width: 100%;
+    }
+
+    .enviar {
+      margin: 20px;
+      padding: 10px 30px 10px 30px;
+      background-color: $color-red;
+      border-radius: 5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: $color-white;
+    }
+    .restablecer {
+      margin: 20px;
+      padding: 10px;
+      background-color: $color-black;
+      border-radius: 5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: $color-white;
+    }
+  }
+
+  .redes__container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+    .redes {
+      width: 200px;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+
+      &:hover {
+        transform: scale(1.1) !important;
+      }
+
+      .icono__redes {
+        font-size: 50px;
+        margin-top: 20px;
+        color: red;
+      }
+      li {
+        text-align: center;
+        margin-top: 5px;
+        padding: 5px 20px;
+        height: 150px;
+        width: 200px;
+       font-size: 16px;
+        text-align: center;
+      }
+    }
+  }
+}
