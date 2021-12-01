@@ -485,12 +485,13 @@ nav {
     z-index: -1;
     transition: 0.3s ease; }
   .featured-img:before {
-    background: #000000;
+    background-image: url(../imagenes/fondo_lineas.png);
     border-radius: 15px;
     bottom: 1rem;
     right: 1rem; }
   .featured-img:after {
     background: #fe0416;
+    opacity: 0.3;
     border-radius: 15px;
     top: 1rem;
     left: 1rem; }
