@@ -1,0 +1,52 @@
+.container-efecto-precio {
+    margin: 0 auto;
+    max-width: 1000px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .featured-img {
+    background: $color-white;
+    width: 50%;
+    position: relative;
+  
+  
+    &:hover {
+      &:before {
+        bottom: 2rem;
+        right: 2rem;
+      }
+  
+      &:after {
+        top: 2rem;
+        left: 2rem;
+      }
+    }
+  
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      transition: 0.3s ease;
+    }
+  
+    &:before {
+      background:$color-black;
+      border-radius: 15px;
+      bottom: 1rem;
+      right: 1rem;
+    }
+  
+    &:after {
+      background: $color-red;
+      border-radius: 15px;
+      top: 1rem;
+      left: 1rem;
+    }
+  }
+  
