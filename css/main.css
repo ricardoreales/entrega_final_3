@@ -165,7 +165,10 @@ nav {
   margin-right: 20px;
   cursor: pointer;
   z-index: 3;
-  color: #ffffff; }
+  color: #ffffff;
+  background-color: #fe0416;
+  border-radius: 50%;
+  padding: 0 6px 0 6px; }
 
 .nav__menu {
   position: fixed;
@@ -485,7 +488,8 @@ nav {
     z-index: -1;
     transition: 0.3s ease; }
   .featured-img:before {
-    background-image: url(../imagenes/fondo_lineas.png);
+    background: #000000;
+    opacity: 0.3;
     border-radius: 15px;
     bottom: 1rem;
     right: 1rem; }
