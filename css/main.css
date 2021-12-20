@@ -112,7 +112,8 @@ a {
 footer {
   font-size: 14px;
   display: flex;
-  background-color: #fe0416; }
+  background-color: #fe0416;
+  align-content: flex-end; }
   footer .footer__container {
     display: flex;
     flex-direction: column;
@@ -342,7 +343,8 @@ nav {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 20px; }
+      margin-top: 20px;
+      margin-bottom: 20px; }
       .main__actividades__container .items .items__container:hover {
         transform: scale(1.1) !important; }
       .main__actividades__container .items .items__container img {
@@ -357,33 +359,20 @@ nav {
         text-transform: uppercase;
         text-align: center; }
 
-.gallery__container {
-  display: grid;
-  grid-template-rows: repeat(6, 1fr);
-  grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6";
-  padding: 20px;
-  grid-gap: 10px;
-  align-items: center;
-  background-color: #000000; }
-  .gallery__container .item1 {
-    grid-area: item1; }
-  .gallery__container .item2 {
-    grid-area: item2; }
-  .gallery__container .item3 {
-    grid-area: item3; }
-  .gallery__container .item4 {
-    grid-area: item4; }
-  .gallery__container .item5 {
-    grid-area: item5; }
-  .gallery__container .item6 {
-    grid-area: item6; }
-  .gallery__container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 20px;
-    margin: 0px;
-    padding: 0px;
-    background-size: contain; }
+.texto {
+  display: flex;
+  flex-direction: column;
+  background: #000000;
+  margin: 20px 20px 20px 40px; }
+  .texto h1 {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px; }
+  .texto p {
+    text-align: center;
+    text-align: justify;
+    font-size: 18px;
+    margin: 20px; }
 
 .main__contactos__container {
   display: flex;
@@ -461,6 +450,35 @@ nav {
   position: fixed;
   bottom: 10px;
   right: 10px; }
+
+.gallery__container {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6";
+  padding: 20px;
+  grid-gap: 10px;
+  align-items: center;
+  background-color: #000000;
+  margin-top: 120px; }
+  .gallery__container .item1 {
+    grid-area: item1; }
+  .gallery__container .item2 {
+    grid-area: item2; }
+  .gallery__container .item3 {
+    grid-area: item3; }
+  .gallery__container .item4 {
+    grid-area: item4; }
+  .gallery__container .item5 {
+    grid-area: item5; }
+  .gallery__container .item6 {
+    grid-area: item6; }
+  .gallery__container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin: 0px;
+    padding: 0px;
+    background-size: contain; }
 
 .container-efecto-precio {
   margin: 0 auto;
@@ -583,13 +601,17 @@ nav {
     flex-direction: row; }
     .main__actividades__container .items .items__container {
       margin-right: 20px; }
+  .items__container {
+    margin-bottom: 100px; }
+  .texto {
+    margin: 20px 150px 20px 150px; }
+  .background__imagen__precios::before {
+    background-position: 0px 0px; }
   .gallery__container {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "item1 item1 item2" "item3 item4 item4" "item5 item5 item6"; }
-  .background__imagen__precios::before {
-    background-position: 0px 0px; }
   .background__imagen__contactos::before {
     background-position: 0px 0px; }
   .main__contactos__container .redes__container {
@@ -688,13 +710,17 @@ nav {
     flex-direction: row; }
     .main__actividades__container .items .items__container {
       margin-right: 20px; }
+  .items__container {
+    margin-bottom: 100px; }
+  .texto {
+    margin: 20px 200px 20px 200px; }
+  .background__imagen__precios::before {
+    background-position: 0px 0px; }
   .gallery__container {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "item1 item1 item2" "item3 item4 item4" "item5 item5 item6"; }
-  .background__imagen__precios::before {
-    background-position: 0px 0px; }
   .background__imagen__contactos::before {
     background-position: 0px 0px; }
   .main__contactos__container .redes__container {

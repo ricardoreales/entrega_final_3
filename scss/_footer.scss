@@ -2,6 +2,7 @@ footer {
   font-size: 14px;
   display: flex;
   background-color: $color-red;
+  align-content: flex-end;
   .footer__container {
     display: flex;
     flex-direction: column;
